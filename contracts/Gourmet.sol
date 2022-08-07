@@ -1,28 +1,24 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-contract Grourmet {
+contract Gourmet {
     struct Info {
         string name;
-        int256 latitude;
-        int256 longitude;
-        uint256 star;
     }
     mapping(address => Info) public eval;
+    mapping(address => bool) public inserted;
+    address[] public keys;
 
     function showStar() external view returns (Info memory) {
         return eval[msg.sender];
     }
 
-    function setInfo(
-        string memory _name,
-        int256 _latitude,
-        int256 _longitude,
-        uint256 _star
-    ) external {
+    function setInfo(string memory _name) external {
         eval[msg.sender].name = _name;
-        eval[msg.sender].latitude = _latitude;
-        eval[msg.sender].longitude = _longitude;
-        eval[msg.sender].star = _star;
+
+        if (!inserted[msg.sender]) {
+            inserted[msg.sender] = true;
+            keys.push(msg.sender);
+        }
     }
 }
