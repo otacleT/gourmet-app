@@ -1,12 +1,12 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const Grourmet = await ethers.getContractFactory("Grourmet");
-  const grourmet = await Grourmet.deploy();
+  const Gourmet = await ethers.getContractFactory("Gourmet");
+  const gourmet = await Gourmet.deploy();
 
-  await grourmet.deployed();
+  await gourmet.deployed();
 
-  console.log("Grourmet deployed to:", grourmet.address);
+  console.log("Gourmet deployed to:", gourmet.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
