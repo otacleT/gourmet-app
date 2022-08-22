@@ -18,4 +18,8 @@ contract Gourmet {
         // 検索しやすい状態でLOGに残したい
         emit starLog(_shopId, result);
     }
+
+    fallback() external payable {}
+
+    receive() external payable {}
 }
