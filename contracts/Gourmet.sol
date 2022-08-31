@@ -5,7 +5,7 @@ contract Gourmet {
     mapping(uint256 => uint256) star;
     event starLog(uint256 shopId, uint256 result);
 
-    function Evaluate(uint256 _shopId, uint256 _uStar) external {
+    function Rating(uint256 _shopId, uint256 _uStar) external {
         // 初めて評価されるときはそのまま評価に影響
         uint256 result;
         if (star[_shopId] == 0) {
