@@ -24,7 +24,7 @@ contract Gourmet {
             }
         }
         shopResult[_shopId] = result;
-        emit rateLog(_shopId, result);
+        emit rateLog(_shopId, shopResult[_shopId]);
     }
 
     fallback() external payable {}
