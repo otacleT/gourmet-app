@@ -4,18 +4,6 @@
 
 評価アルゴリズムをスマートコントラクトで実装することで「誰でも見ることができ、誰も変更することができない」仕組みを実現しました。
 
-#### コントラクトアドレス
-
-0x92F146EF3cFaA63d44301bEFc842CF0de844e2b7
-
-#### EtherscanのURL
-
-https://goerli.etherscan.io/address/0x92F146EF3cFaA63d44301bEFc842CF0de844e2b7#code
-
-#### 技育展2022 登壇資料
-
-https://speakerdeck.com/otaclet/gourmet-app
-
 ### 解決したい社会課題
 
 少し前に食べログが評価アルゴリズムの一方的な変更を行ったことで、飲食店と訴訟問題になったというニュースがありました。このニュースで明らかになった問題点として大きく以下の３つが挙げられます。
@@ -37,3 +25,17 @@ https://speakerdeck.com/otaclet/gourmet-app
 ### アルゴリズムの説明
 
 重み関数を用いて、ユーザーの信頼度によって評価が与える影響を変化させるようにしています。これにより、「ユーザーが複数のウォレットを用いることで多くの投票権を得る」というようなブロックチェーン技術を用いることで生じる問題を解決できると考えました。
+
+### 関連情報
+
+#### コントラクトアドレス
+
+0x92F146EF3cFaA63d44301bEFc842CF0de844e2b7
+
+#### EtherscanのURL
+
+https://goerli.etherscan.io/address/0x92F146EF3cFaA63d44301bEFc842CF0de844e2b7#code
+
+#### 技育展2022 登壇資料
+
+https://speakerdeck.com/otaclet/gourmet-app
